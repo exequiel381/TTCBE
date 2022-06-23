@@ -50,11 +50,7 @@ namespace CodeTestTCBackEnd.BL.Repositorios.Memoria
             _pedidos[indiceModificar] = PedidoModificado;
         }
 
-        public int GetNuevoCodigo()
-        {
-            return _pedidos.Max(p => p.Codigo)+1;
-        }
-
+        
         public List<Pedido> ObtenerLista()
         {
             return _pedidos;

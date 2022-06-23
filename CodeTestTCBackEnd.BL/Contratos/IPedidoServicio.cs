@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeTestTCBackEnd.BL.Enumeraciones
+namespace CodeTestTCBackEnd.BL.Contratos
 {
-    public enum TipoMascota
+    public interface IPedidoServicio : IServicio
     {
-        PERRO = 1, GATO = 2
+        int GetNuevoCodigo();
     }
 }

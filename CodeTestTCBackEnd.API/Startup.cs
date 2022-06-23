@@ -1,4 +1,7 @@
 using AutoMapper;
+using CodeTestTCBackEnd.BL.Contratos;
+using CodeTestTCBackEnd.BL.Repositorios.Memoria;
+using CodeTestTCBackEnd.BL.Servicios;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,7 +43,10 @@ namespace CodeTestTCBackEnd.API
             });
 
             IMapper mapper = mapperConfig.CreateMapper();
+            IRepositorio repositorio = new PedidoRepositorio();
+            IPedidoServicio pedidoServicio = new PedidoServicio(repositorio);
             services.AddSingleton(mapper);
+            services.AddSingleton(pedidoServicio);
             services.AddMvc();
         }
 
