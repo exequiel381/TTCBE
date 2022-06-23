@@ -10,5 +10,6 @@ namespace CodeTestTCBackEnd.BL.Contratos
     public interface IPedidoServicio : IServicio<Pedido>
     {
         int GetNuevoCodigo();
+        List<Pedido> ObtenerListaOrdenadaPorFechaAscendente();
     }
 }

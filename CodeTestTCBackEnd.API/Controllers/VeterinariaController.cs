@@ -14,8 +14,6 @@ namespace CodeTestTCBackEnd.API.Controllers
     public class VeterinariaController : Controller
     {
         //Una mejor manera de instanciar los animales segun el tipo en el POST
-        //Y otra manera de crear el repo , no se si hara falta hacerlo mas generico
-
         private readonly IPedidoServicio _pedidosServicio;
         private readonly IMapper _mapper;
 
@@ -28,7 +26,7 @@ namespace CodeTestTCBackEnd.API.Controllers
         [HttpGet]
         public  List<GetPedidoDTO> GetPedidos()
         {
-            var pedidos = _pedidosServicio.ObtenerLista();
+            var pedidos = _pedidosServicio.ObtenerListaOrdenadaPorFechaAscendente();
             List<GetPedidoDTO> pedidosDTO = new List<GetPedidoDTO>();
             foreach (var pedido in pedidos)
             {

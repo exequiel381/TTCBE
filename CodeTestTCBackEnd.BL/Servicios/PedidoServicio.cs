@@ -44,5 +44,10 @@ namespace CodeTestTCBackEnd.BL.Servicios
         {
             return _pedidosRepositorio.ObtenerLista().Max(p => p.Codigo) + 1;
         }
+
+        public List<Pedido> ObtenerListaOrdenadaPorFechaAscendente()
+        {
+            return _pedidosRepositorio.ObtenerLista().OrderBy(pedido => pedido.FechaCreacion).ToList();
+        }
     }
 }
