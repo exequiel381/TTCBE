@@ -9,6 +9,7 @@ namespace CodeTestTCBackEnd.BL.DTOs
 {
     public class GetMascotaDTO
     {
+        public string _tipoDeMascota { get; set; }
         public int _CantidadComplementosDietarios { get; set; }
         public double _cantidadAlimento { get; set; }
 

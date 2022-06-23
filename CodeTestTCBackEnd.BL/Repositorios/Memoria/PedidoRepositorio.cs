@@ -8,33 +8,28 @@ using System.Threading.Tasks;
 
 namespace CodeTestTCBackEnd.BL.Repositorios.Memoria
 {
-    public class PedidoRepositorio : IRepositorio
+    public class PedidoRepositorio : IRepositorio<Pedido>
     {
         private List<Pedido> _pedidos = new List<Pedido>();
 
         public PedidoRepositorio()
         {
-            _pedidos.Add(new Pedido()
-            {
-                Codigo = 1,
-                Direccion = "Junin 2421",
-                Estado = Enumeraciones.EstadoPedido.PENDIENTE,
-                Mascota = new Perro(10,5,true) 
-            });
+            _pedidos.Add(new Pedido(1, "Junin 2421", "42716480", Enumeraciones.EstadoPedido.PENDIENTE, new Perro(10, 5, true), new DateTime(2022, 6, 22, 12, 32, 30)));
+            
         }
         
-        public void AgregarPedido(Pedido nuevoPedido)
+        public void Agregar(Pedido nuevoPedido)
         {
             if (YaExiste(nuevoPedido.Codigo)) throw new Exception("Ya existe un producto con este codigo.");
             _pedidos.Add(nuevoPedido);
         }
 
-        public Pedido BuscarPedido(int codigo)
+        public Pedido Buscar(int codigo)
         {
             return _pedidos.Find(x => x.Codigo == codigo);
         }
 
-        public void EliminarProducto(int codigo)
+        public void Eliminar(int codigo)
         {
             if (YaExiste(codigo))
             {
@@ -43,7 +38,7 @@ namespace CodeTestTCBackEnd.BL.Repositorios.Memoria
             }
         }
 
-        public void ModificarPedido(int codigoActual, Pedido PedidoModificado)
+        public void Modificar(int codigoActual, Pedido PedidoModificado)
         {
             if (codigoActual != PedidoModificado.Codigo && YaExiste(PedidoModificado.Codigo)) throw new Exception("Ya existe un producto con este codigo.");
             int indiceModificar = _pedidos.FindIndex(x => x.Codigo == codigoActual);

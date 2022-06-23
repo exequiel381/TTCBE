@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace CodeTestTCBackEnd.BL.Contratos
 {
-    public interface IServicio
+    public interface IServicio<T>
     {
-        void AgregarPedido(Pedido nuevoPedido);
-        Pedido BuscarPedido(int codigo);
-        void EliminarProducto(int codigo);
-        void ModificarPedido(int codigoActual, Pedido PedidoModificado);
-        List<Pedido> ObtenerLista();
+        void Agregar(T nuevoPedido);
+        T Buscar(int codigo);
+        void Eliminar(int codigo);
+        void Modificar(int codigoActual, T PedidoModificado);
+        List<T> ObtenerLista();
     }
 }

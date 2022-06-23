@@ -15,12 +15,24 @@ namespace CodeTestTCBackEnd.BL.Modelos
 
         }
 
-        public Pedido(string direccion, string telefono, EstadoPedido estado, Mascota mascota)
+        public Pedido(int codigo,string direccion, string telefono, EstadoPedido estado, Mascota mascota)
         {
+            _codigo = codigo;
             _direccion = direccion;
             _telefono = telefono;
             _estado = estado;
             _mascota = mascota;
+            _fechaCreacion = DateTime.Now;
+        }
+
+        public Pedido(int codigo, string direccion, string telefono, EstadoPedido estado, Mascota mascota,DateTime fechaCreacion)
+        {
+            _codigo = codigo;
+            _direccion = direccion;
+            _telefono = telefono;
+            _estado = estado;
+            _mascota = mascota;
+            _fechaCreacion = fechaCreacion;
         }
 
 
@@ -31,6 +43,7 @@ namespace CodeTestTCBackEnd.BL.Modelos
         private string _telefono;
         private EstadoPedido _estado;
         private Mascota _mascota;
+        private DateTime _fechaCreacion;
 
         #endregion
         #region Propiedades
@@ -60,8 +73,13 @@ namespace CodeTestTCBackEnd.BL.Modelos
             get { return _codigo; }
             set { _codigo = value; }
         }
+
+        public string FechaCreacion
+        {
+            get { return _fechaCreacion.ToString("dd/MM/yyyy HH:mm"); }
+            
+        }
         #endregion
-        #region Metodos
-        #endregion
+
     }
 }

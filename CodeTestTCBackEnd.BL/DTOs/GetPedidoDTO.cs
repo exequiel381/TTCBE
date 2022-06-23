@@ -10,14 +10,19 @@ namespace CodeTestTCBackEnd.BL.DTOs
 {
     public class GetPedidoDTO
     {
+        [Required]
         public int _codigo { get; set; }
         [Required]
         public string _direccion { get; set; }
         [Required]
         public string _telefono { get; set; }
         [Required]
-        public EstadoPedido _estado { get; set; }
+        public string _estado { get; set; }
         [Required]
         public GetMascotaDTO _mascota { get; set; }
+        [Required]
+        public string _fechaCreacion { get; set; }
+
+
     }
 }

@@ -10,29 +10,29 @@ namespace CodeTestTCBackEnd.BL.Servicios
 {
     public class PedidoServicio : IPedidoServicio
     {
-        private readonly IRepositorio _pedidosRepositorio;
-        public PedidoServicio(IRepositorio pedidosRepositorio)
+        private readonly IRepositorio<Pedido> _pedidosRepositorio;
+        public PedidoServicio(IRepositorio<Pedido> pedidosRepositorio)
         {
             _pedidosRepositorio = pedidosRepositorio;
         }
-        public void AgregarPedido(Pedido nuevoPedido)
+        public void Agregar(Pedido nuevoPedido)
         {
-            _pedidosRepositorio.AgregarPedido(nuevoPedido);
+            _pedidosRepositorio.Agregar(nuevoPedido);
         }
 
-        public Pedido BuscarPedido(int codigo)
+        public Pedido Buscar(int codigo)
         {
-            return _pedidosRepositorio.BuscarPedido(codigo);
+            return _pedidosRepositorio.Buscar(codigo);
         }
 
-        public void EliminarProducto(int codigo)
+        public void Eliminar(int codigo)
         {
-            _pedidosRepositorio.EliminarProducto(codigo);
+            _pedidosRepositorio.Eliminar(codigo);
         }
 
-        public void ModificarPedido(int codigoActual, Pedido PedidoModificado)
+        public void Modificar(int codigoActual, Pedido PedidoModificado)
         {
-            _pedidosRepositorio.ModificarPedido(codigoActual, PedidoModificado);
+            _pedidosRepositorio.Modificar(codigoActual, PedidoModificado);
         }
 
         public List<Pedido> ObtenerLista()

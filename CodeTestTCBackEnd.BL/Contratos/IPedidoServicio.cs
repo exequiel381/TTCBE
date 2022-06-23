@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeTestTCBackEnd.BL.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CodeTestTCBackEnd.BL.Contratos
 {
-    public interface IPedidoServicio : IServicio
+    public interface IPedidoServicio : IServicio<Pedido>
     {
         int GetNuevoCodigo();
     }

@@ -32,7 +32,8 @@ namespace CodeTestTCBackEnd.API.Controllers
             List<GetPedidoDTO> pedidosDTO = new List<GetPedidoDTO>();
             foreach (var pedido in pedidos)
             {
-                pedidosDTO.Add(_mapper.Map<GetPedidoDTO>(pedido));
+                var pedidoDTO = _mapper.Map<GetPedidoDTO>(pedido);
+                pedidosDTO.Add(pedidoDTO);
             }
             return pedidosDTO;
         }
@@ -52,9 +53,9 @@ namespace CodeTestTCBackEnd.API.Controllers
                 {
                     mascota = new Gato(pedidoDTO._mascota._peso, pedidoDTO._mascota._edad, pedidoDTO._mascota._esCastrado);
                 }
-                
-                Pedido pedido = new Pedido() { Codigo= codigoPedido,Direccion = pedidoDTO._direccion,Estado= EstadoPedido.PENDIENTE,Telefono=pedidoDTO._telefono, Mascota = mascota };
-                _pedidosServicio.AgregarPedido(pedido);
+
+                Pedido pedido = new Pedido(codigoPedido, pedidoDTO._direccion, pedidoDTO._telefono, EstadoPedido.PENDIENTE, mascota); 
+                _pedidosServicio.Agregar(pedido);
                 return Ok();
             }
             return BadRequest();
@@ -65,9 +66,9 @@ namespace CodeTestTCBackEnd.API.Controllers
         {
             if (ModelState.IsValid)
             {
-                Pedido p = _pedidosServicio.BuscarPedido(codigo);
+                Pedido p = _pedidosServicio.Buscar(codigo);
                 p.Estado = putPedidoDTO._estado;
-                _pedidosServicio.ModificarPedido(codigo, p);
+                _pedidosServicio.Modificar(codigo, p);
                 return Ok();
             }
 
