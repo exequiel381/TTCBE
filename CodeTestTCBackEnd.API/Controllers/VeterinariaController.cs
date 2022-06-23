@@ -60,5 +60,18 @@ namespace CodeTestTCBackEnd.API.Controllers
             }
             return BadRequest();
         }
+
+        public ActionResult putPedido(int codigo,PutPedidoDTO putPedidoDTO)
+        {
+            if (ModelState.IsValid)
+            {
+                Pedido p = _pedidosRepositorio.BuscarPedido(codigo);
+                p.Estado = putPedidoDTO._estado;
+                _pedidosRepositorio.ModificarPedido(codigo, p);
+                return Ok();
+            }
+
+            return BadRequest();
+        }
     }
 }

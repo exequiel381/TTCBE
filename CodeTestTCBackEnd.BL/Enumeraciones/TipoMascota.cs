@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CodeTestTCBackEnd.BL.Enumeraciones
 {
-    public enum EstadoPedido
+    public enum TipoMascota
     {
-        PENDIENTE, FINALIZADO , CANCELADO
+        PERRO = 0, GATO = 1
     }
 }
