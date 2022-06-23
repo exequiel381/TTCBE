@@ -16,5 +16,6 @@ namespace CodeTestTCBackEnd.BL.DTOs
         public string _telefono { get; set; }
         [Required]
         public PostMascotaDTO _mascota { get; set; }
+        public TipoMascota _tipoMascota { get; set; }
     }
 }

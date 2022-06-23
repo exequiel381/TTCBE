@@ -29,4 +29,3 @@ C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.API\obj\Debu
 C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.API\obj\Debug\net5.0\CodeTestTCBackEnd.API.pdb
 C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.API\obj\Debug\net5.0\CodeTestTCBackEnd.API.genruntimeconfig.cache
 C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.API\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.API\obj\Debug\net5.0\CodeTestTCBackEnd.API.csproj.CopyComplete
