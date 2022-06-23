@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "uC0MwzJk6g/yXvEotcLstuCfaFNyGvdnNc4wXLH4G4jZuxTqjnRmad4Mhk253aqMmDwJz5ft5NnLRRLU4iT1aQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fiume\\source\\repos\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fiume\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\fiume\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

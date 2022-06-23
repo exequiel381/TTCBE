@@ -1,0 +1,12 @@
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.AssemblyInfoInputs.cache
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.AssemblyInfo.cs
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.csproj.CoreCompileInputs.cache
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\bin\Debug\net5.0\CodeTestTCBackEnd.BL.deps.json
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\bin\Debug\net5.0\CodeTestTCBackEnd.BL.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\bin\Debug\net5.0\ref\CodeTestTCBackEnd.BL.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\bin\Debug\net5.0\CodeTestTCBackEnd.BL.pdb
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\ref\CodeTestTCBackEnd.BL.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.pdb
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.BL\obj\Debug\net5.0\CodeTestTCBackEnd.BL.csproj.AssemblyReference.cache
