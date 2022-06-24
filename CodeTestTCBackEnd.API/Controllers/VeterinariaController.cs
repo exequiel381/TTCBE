@@ -17,7 +17,7 @@ namespace CodeTestTCBackEnd.API.Controllers
         //Una mejor manera de instanciar los animales segun el tipo en el POST
         private readonly IPedidoServicio _pedidosServicio;
         private readonly IMapper _mapper;
-
+        //@DOC : Inyectamos el servicio y Mapper como un singleton. El servicio para no instanciar nuevamente los datos de memoria, y para usar una sola instancia de ambos
         public VeterinariaController(IMapper mapper, IPedidoServicio pedidosServicio)
         {
             _mapper = mapper;
@@ -25,12 +25,14 @@ namespace CodeTestTCBackEnd.API.Controllers
         }
 
         [HttpGet]
+        //@DOC : Brindamos la lista de pedidos ordenadas por tiempo ascendente, para conllevar un estilo de FIFO. 
         public  List<GetPedidoDTO> GetPedidos()
         {
             var pedidos = _pedidosServicio.ObtenerListaOrdenadaPorFechaAscendente();
             List<GetPedidoDTO> pedidosDTO = new List<GetPedidoDTO>();
             foreach (var pedido in pedidos)
             {
+                //@DOC : Utilizamos un AutoMapper , para no devolver datos innecesarios en la consulta, solo los del DTO correspondiente
                 var pedidoDTO = _mapper.Map<GetPedidoDTO>(pedido);
                 pedidosDTO.Add(pedidoDTO);
             }
@@ -60,7 +62,7 @@ namespace CodeTestTCBackEnd.API.Controllers
             return BadRequest();
         }
 
-
+        //@DOC : Una ruta que calcule la cantidad de alimento y le muestre al usuario como quedaria el pedido y decida si aceptarlo o no.
         [HttpPost("confirmationPost")]
         public ActionResult PostPedidoPrev(PostPedidoDTO pedidoDTO)
         {
@@ -77,12 +79,13 @@ namespace CodeTestTCBackEnd.API.Controllers
                     mascota = new Gato(pedidoDTO._mascota._peso, pedidoDTO._mascota._edad, pedidoDTO._mascota._esCastrado);
                 }
 
-                var mascotaDTO= _mapper.Map<GetMascotaDTO>(mascota);
+                var mascotaDTO = _mapper.Map<GetMascotaDTO>(mascota);
                 return Ok(mascotaDTO);
             }
             return BadRequest();
         }
 
+        //@DOC : Podriamos validar , por ejemplo , no permitir pasar de un estado COMPLETADO a CANCELADO, pero no como no es especificado en el dominio , dejo sin validacion.
         [HttpPut("{codigo}")]
         public ActionResult putPedido(int codigo,PutPedidoDTO putPedidoDTO)
         {
