@@ -1,12 +1,12 @@
-﻿using CodeTestTCBackEnd.BL.Contratos;
-using CodeTestTCBackEnd.BL.Modelos;
+﻿using CodeTestTCBackEnd.BL.Modelos;
+using CodeTestTCBackEnd.Repositorio.Contratos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeTestTCBackEnd.BL.Servicios
+namespace CodeTestTCBackEnd.Repositorio.Servicios
 {
     public class PedidoServicio : IPedidoServicio
     {

@@ -1,0 +1,15 @@
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\CodeTestTCBackEnd.Repositorio.deps.json
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\CodeTestTCBackEnd.Repositorio.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\ref\CodeTestTCBackEnd.Repositorio.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\CodeTestTCBackEnd.Repositorio.pdb
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\CodeTestTCBackEnd.BL.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\bin\Debug\net5.0\CodeTestTCBackEnd.BL.pdb
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.csproj.AssemblyReference.cache
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.AssemblyInfoInputs.cache
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.AssemblyInfo.cs
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.csproj.CopyComplete
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\ref\CodeTestTCBackEnd.Repositorio.dll
+C:\Users\fiume\source\repos\CodeTestTCBackEnd.API\CodeTestTCBackEnd.Repositorio\obj\Debug\net5.0\CodeTestTCBackEnd.Repositorio.pdb

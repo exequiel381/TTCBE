@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CodeTestTCBackEnd.Repositorio/1.0.0": {
+        "dependencies": {
+          "CodeTestTCBackEnd.BL": "1.0.0"
+        },
+        "runtime": {
+          "CodeTestTCBackEnd.Repositorio.dll": {}
+        }
+      },
+      "CodeTestTCBackEnd.BL/1.0.0": {
+        "runtime": {
+          "CodeTestTCBackEnd.BL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodeTestTCBackEnd.Repositorio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CodeTestTCBackEnd.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

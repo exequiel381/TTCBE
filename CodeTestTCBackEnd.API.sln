@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestTCBackEnd.API", "CodeTestTCBackEnd.API\CodeTestTCBackEnd.API.csproj", "{D177E1B8-D44A-4268-97DA-7F94208A1DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeTestTCBackEnd.API", "CodeTestTCBackEnd.API\CodeTestTCBackEnd.API.csproj", "{D177E1B8-D44A-4268-97DA-7F94208A1DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestTCBackEnd.BL", "CodeTestTCBackEnd.BL\CodeTestTCBackEnd.BL.csproj", "{14B5341F-3CFC-42F6-A15F-3C2C24128B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeTestTCBackEnd.BL", "CodeTestTCBackEnd.BL\CodeTestTCBackEnd.BL.csproj", "{14B5341F-3CFC-42F6-A15F-3C2C24128B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestTCBackEnd.Repositorio", "CodeTestTCBackEnd.Repositorio\CodeTestTCBackEnd.Repositorio.csproj", "{90A4AA5C-C256-4641-82F1-91A82C5C7529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{14B5341F-3CFC-42F6-A15F-3C2C24128B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B5341F-3CFC-42F6-A15F-3C2C24128B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B5341F-3CFC-42F6-A15F-3C2C24128B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A4AA5C-C256-4641-82F1-91A82C5C7529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A4AA5C-C256-4641-82F1-91A82C5C7529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A4AA5C-C256-4641-82F1-91A82C5C7529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A4AA5C-C256-4641-82F1-91A82C5C7529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

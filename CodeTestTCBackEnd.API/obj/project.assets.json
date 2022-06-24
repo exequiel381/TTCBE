@@ -106,6 +106,19 @@
         "runtime": {
           "bin/placeholder/CodeTestTCBackEnd.BL.dll": {}
         }
+      },
+      "CodeTestTCBackEnd.Repositorio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CodeTestTCBackEnd.BL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CodeTestTCBackEnd.Repositorio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeTestTCBackEnd.Repositorio.dll": {}
+        }
       }
     }
   },
@@ -305,12 +318,18 @@
       "type": "project",
       "path": "../CodeTestTCBackEnd.BL/CodeTestTCBackEnd.BL.csproj",
       "msbuildProject": "../CodeTestTCBackEnd.BL/CodeTestTCBackEnd.BL.csproj"
+    },
+    "CodeTestTCBackEnd.Repositorio/1.0.0": {
+      "type": "project",
+      "path": "../CodeTestTCBackEnd.Repositorio/CodeTestTCBackEnd.Repositorio.csproj",
+      "msbuildProject": "../CodeTestTCBackEnd.Repositorio/CodeTestTCBackEnd.Repositorio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 11.0.1",
       "CodeTestTCBackEnd.BL >= 1.0.0",
+      "CodeTestTCBackEnd.Repositorio >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -343,6 +362,9 @@
           "projectReferences": {
             "C:\\Users\\fiume\\source\\repos\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.BL\\CodeTestTCBackEnd.BL.csproj": {
               "projectPath": "C:\\Users\\fiume\\source\\repos\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.BL\\CodeTestTCBackEnd.BL.csproj"
+            },
+            "C:\\Users\\fiume\\source\\repos\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.Repositorio\\CodeTestTCBackEnd.Repositorio.csproj": {
+              "projectPath": "C:\\Users\\fiume\\source\\repos\\CodeTestTCBackEnd.API\\CodeTestTCBackEnd.Repositorio\\CodeTestTCBackEnd.Repositorio.csproj"
             }
           }
         }

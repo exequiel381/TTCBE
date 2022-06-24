@@ -1,12 +1,12 @@
-﻿using CodeTestTCBackEnd.BL.Contratos;
-using CodeTestTCBackEnd.BL.Modelos;
+﻿using CodeTestTCBackEnd.BL.Modelos;
+using CodeTestTCBackEnd.Repositorio.Contratos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeTestTCBackEnd.BL.Repositorios.Memoria
+namespace CodeTestTCBackEnd.Repositorio.Repositorios.Memoria
 {
     public class PedidoRepositorio : IRepositorio<Pedido>
     {
@@ -14,7 +14,7 @@ namespace CodeTestTCBackEnd.BL.Repositorios.Memoria
 
         public PedidoRepositorio()
         {
-            _pedidos.Add(new Pedido(1, "Junin 2421", "42716480", Enumeraciones.EstadoPedido.PENDIENTE, new Perro(10, 5, true), new DateTime(2022, 6, 22, 12, 32, 30)));
+            _pedidos.Add(new Pedido(1, "Junin 2421", "42716480", BL.Enumeraciones.EstadoPedido.PENDIENTE, new Perro(10, 5, true), new DateTime(2022, 6, 22, 12, 32, 30)));
             
         }
         

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using CodeTestTCBackEnd.BL.Contratos;
 using CodeTestTCBackEnd.BL.DTOs;
 using CodeTestTCBackEnd.BL.Enumeraciones;
 using CodeTestTCBackEnd.BL.Modelos;
+using CodeTestTCBackEnd.Repositorio.Contratos;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -12,13 +12,13 @@ namespace CodeTestTCBackEnd.API.Controllers
     [Route("api/[controller]")]
     
     [ApiController]
-    public class VeterinariaController : Controller
+    public class PedidoController : Controller
     {
         //Una mejor manera de instanciar los animales segun el tipo en el POST
         private readonly IPedidoServicio _pedidosServicio;
         private readonly IMapper _mapper;
         //@DOC : Inyectamos el servicio y Mapper como un singleton. El servicio para no instanciar nuevamente los datos de memoria, y para usar una sola instancia de ambos
-        public VeterinariaController(IMapper mapper, IPedidoServicio pedidosServicio)
+        public PedidoController(IMapper mapper, IPedidoServicio pedidosServicio)
         {
             _mapper = mapper;
             _pedidosServicio = pedidosServicio;
@@ -26,7 +26,7 @@ namespace CodeTestTCBackEnd.API.Controllers
 
         [HttpGet]
         //@DOC : Brindamos la lista de pedidos ordenadas por tiempo ascendente, para conllevar un estilo de FIFO. 
-        public  List<GetPedidoDTO> GetPedidos()
+        public IActionResult GetPedidos()
         {
             var pedidos = _pedidosServicio.ObtenerListaOrdenadaPorFechaAscendente();
             List<GetPedidoDTO> pedidosDTO = new List<GetPedidoDTO>();
@@ -36,11 +36,11 @@ namespace CodeTestTCBackEnd.API.Controllers
                 var pedidoDTO = _mapper.Map<GetPedidoDTO>(pedido);
                 pedidosDTO.Add(pedidoDTO);
             }
-            return pedidosDTO;
+            return Ok(pedidosDTO);
         }
 
         [HttpPost]
-        public ActionResult PostPedido(PostPedidoDTO pedidoDTO)
+        public IActionResult PostPedido(PostPedidoDTO pedidoDTO)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +64,7 @@ namespace CodeTestTCBackEnd.API.Controllers
 
         //@DOC : Una ruta que calcule la cantidad de alimento y le muestre al usuario como quedaria el pedido y decida si aceptarlo o no.
         [HttpPost("confirmationPost")]
-        public ActionResult PostPedidoPrev(PostPedidoDTO pedidoDTO)
+        public IActionResult PostPedidoPrev(PostPedidoDTO pedidoDTO)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace CodeTestTCBackEnd.API.Controllers
 
         //@DOC : Podriamos validar , por ejemplo , no permitir pasar de un estado COMPLETADO a CANCELADO, pero no como no es especificado en el dominio , dejo sin validacion.
         [HttpPut("{codigo}")]
-        public ActionResult putPedido(int codigo,PutPedidoDTO putPedidoDTO)
+        public IActionResult putPedido(int codigo,PutPedidoDTO putPedidoDTO)
         {
             if (ModelState.IsValid)
             {

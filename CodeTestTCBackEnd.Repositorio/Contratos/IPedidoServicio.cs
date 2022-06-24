@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeTestTCBackEnd.BL.Contratos
+namespace CodeTestTCBackEnd.Repositorio.Contratos
 {
     public interface IPedidoServicio : IServicio<Pedido>
     {

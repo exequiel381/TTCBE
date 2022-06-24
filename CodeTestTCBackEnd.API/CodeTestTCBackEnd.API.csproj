@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CodeTestTCBackEnd.BL\CodeTestTCBackEnd.BL.csproj" />
+    <ProjectReference Include="..\CodeTestTCBackEnd.Repositorio\CodeTestTCBackEnd.Repositorio.csproj" />
   </ItemGroup>
 
 </Project>
